@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    
+    <script>
+        debugger;
+        const regex = /\S+@\S+\.\S+/;
+        const emailValid = "abeLincoln@gmail.com";
+const emailInvalid = "abeLincoln@gmail .com";
+debugger;
+if (regex.test(emailValid)) {
+    console.log("Hurrah!you enter valid email")
+}
+if (regex.test(!emailInvalid)) {
+ console.log("oops!you enter invalid email")
+}
+else
+{
+    console.log("Hurrah!you enter valid email")
+}
+
+    </script>
+</body>
+</html>

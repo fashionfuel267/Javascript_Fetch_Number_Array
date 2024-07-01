@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in Javascript</title>
+</head>
+<body>
+    <div style="width: 500;">
+        <ul id="std">
+
+        </ul>
+        <span></span>
+        <div></div>
+    </div>
+    <div>
+
+    </div>
+    <script>
+        //literal
+        let students= ["Tasnim","Habib","kalam"];
+        //Array Instance
+        let lab= new Array();
+        //Array Constructor
+        let trainers= new Array("Shahanaj","Kulsum","Billah");
+        let li="";
+        // debugger;
+        
+         
+        //Array Methods
+        students.push("Koyel");
+        // for(var i=0;i<students.length;i++)
+        // {
+        //     li +="<li>"+ students[i] +"</li>";
+        // }
+      //pop
+        students.pop();
+        
+       //
+      students[5]="Popi";
+      //shift(Remove first item)
+      students.shift();
+      students.unshift("Jewel")
+      students.sort();
+      students.reverse();
+      for(var i=0;i<students.length;i++)
+        {
+            li +="<li>"+ students[i] +"</li>";
+        }
+        let join= students.join(",");
+        console.log(join)
+        
+        document.getElementById("std").innerHTML="";
+        document.getElementById("std").innerHTML=li;
+    </script>
+</body>
+</html>
